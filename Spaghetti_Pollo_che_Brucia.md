@@ -13,6 +13,8 @@ Run the following code to cook one meal:
 #include <kitchen.h>
 
 int main() {
+
+    // ingredients
     Spaghetti_g speghetti = 125;
     Tomatoes tomatoes = 2;
     ChickenBreast chicken = 1;
