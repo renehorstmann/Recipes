@@ -1,4 +1,4 @@
-# Spaghetti Pollobche Brucia
+# Spaghetti Pollo che Brucia
 
 ![result](build/Spaghetti_Pollo_che_Brucia.jpg "Build")
 
