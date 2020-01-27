@@ -49,12 +49,13 @@ int main() {
     // make sauce
     knife_cut_slices(garlic);
     knife_cut_slices(chili);
-    pan_heat_level(6);
+    pan_heat_level(7);
     pan_include(garlic);
     pan_include(chili);
     hourglass_sleep_min(2);
     pan_include(wine);
     pan_include(tomatoes);
+    pan_heat_level(4);
     
     // spaghetti
     Spaghetti_cook(spaghetti);
