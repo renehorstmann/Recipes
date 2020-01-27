@@ -1,6 +1,6 @@
-# Speghetti Pollobche Brucia
+# Spaghetti Pollobche Brucia
 
-![result](build/Speghetti_Pollo_che_Brucia.jpg "Build")
+![result](build/Spaghetti_Pollo_che_Brucia.jpg "Build")
 
 
 ```c
