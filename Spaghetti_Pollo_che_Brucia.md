@@ -23,7 +23,7 @@ int main() {
     Basil basil = 10
     RedWine_ml wine = 100;
 
-    oven_convection_degree(160);
+    oven_convection_degree_C(160);
 
     // prepare tomatoes
     pot_fill_water_L(1);
