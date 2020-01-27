@@ -31,7 +31,7 @@ int main() {
     hourglass_sleep_min(1.5)
     pot_tip_out();
     cool_under_water(tomatoes);
-    tomatoes_pull_off_skin(tomatoes);
+    pull_off_skin(tomatoes);
     knife_cut_into_pieces(tomatoes);
 
     // cook chicken breast
