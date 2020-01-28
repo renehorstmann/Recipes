@@ -18,13 +18,13 @@ static const bool spicy = true;
 int main() {
 
     // ingredients
-    Spaghetti     speghetti = G * 125;
+    Spaghetti     speghetti = 125 * G;
     Tomatoes      tomatoes  = 2;
     ChickenBreast chicken   = 1;
     Garlic        garlic    = 1;
-    RedChili      chili     = CM * spicy ? 2 : 1;
+    RedChili      chili     = (spicy ? 2 : 1) * CM;
     Basil         basil     = 10
-    RedWine       wine      = ML *100;
+    RedWine       wine      = 100 * ML;
 
    
     // prepare tomatoes (see below)
