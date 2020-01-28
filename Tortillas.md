@@ -1,7 +1,7 @@
 
-# Tortilla
+# Tortillas
 
-![result](build/Tortilla.jpg "Build")
+![result](build/Tortillas.jpg "Build")
 
 ## Source code
 Run the following code to cock four Tortillas:

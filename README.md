@@ -6,6 +6,6 @@ Some of my favorite recipes
 - [Gnocchi](Gnocchi.md)
 
 ## Mexican
-- [Tortilla](Tortilla.md)
+- [Tortillas](Tortillas.md)
 
 
