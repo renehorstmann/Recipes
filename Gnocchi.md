@@ -21,10 +21,25 @@ int main() {
 
    
     // cook potatoes (see below)
-    cool_potatoes;
+    cook_potatoes(potatoes);
 
     // make gnocci dough
-    // todo
+    bowl_include(potatoes);
+    bowl_include(flour);
+    bowl_include(SALT);
+    masher_mash(bowl_content());
+    Dough dough = bowl_content());
+
+    // divide into gnocchis
+    roll_out(dough);
+    knife_cut_into_pieces(dough);
+    fork_press(dough)
+    
+    // cook gnocchis
+    pan_heat_level(8);
+    pan_include(2 * SPOON_OLIVE_OIL);
+    pan_include(dough);
+    hourglass_wait_min(8);
 
     serve();
 }
