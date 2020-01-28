@@ -12,6 +12,8 @@ void peel_tomatoes(Tomatoes tomatoes);
 void bake_chicken_breast(ChickenBreast chicken);
 void cook_spaghetti(Spaghetti spaghetti);
 
+static const bool spicy = true;
+
 int main() {
 
     // ingredients
@@ -19,7 +21,7 @@ int main() {
     Tomatoes tomatoes = 2;
     ChickenBreast chicken = 1;
     Garlic garlic = 1;
-    RedChili_cm chili = 2;
+    RedChili_cm chili = spicy ? 2 : 1;
     Basil basil = 10
     RedWine_ml wine = 100;
 
