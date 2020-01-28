@@ -8,6 +8,7 @@ Run the following code to cook one meal:
 ```c
 #include <kitchen.h>
 
+// recipes below main
 void peel_tomatoes(Tomatoes tomatoes);
 void bake_chicken_breast(ChickenBreast chicken);
 void cook_spaghetti(Spaghetti spaghetti);
@@ -17,19 +18,19 @@ static const bool spicy = true;
 int main() {
 
     // ingredients
-    Spaghetti_g speghetti = 125;
-    Tomatoes tomatoes = 2;
-    ChickenBreast chicken = 1;
-    Garlic garlic = 1;
-    RedChili_cm chili = spicy ? 2 : 1;
-    Basil basil = 10
-    RedWine_ml wine = 100;
+    Spaghetti     speghetti = G * 125;
+    Tomatoes      tomatoes  = 2;
+    ChickenBreast chicken   = 1;
+    Garlic        garlic    = 1;
+    RedChili      chili     = CM * spicy ? 2 : 1;
+    Basil         basil     = 10
+    RedWine       wine      = ML *100;
 
-    
-    // prepare tomatoes
+   
+    // prepare tomatoes (see below)
     peel_tomatoes(tomatoes);
 
-    // cook chicken breast
+    // cook chicken breast (see below)
     cook_in_parallel(bake_chicken_breast, chicken);
 
     // make sauce
@@ -39,15 +40,16 @@ int main() {
     pan_heat_level(7);  // same pan as from the chicken
     pan_include(garlic);
     pan_include(chili);
-    hourglass_sleep_min(2);
+    hourglass_wait_min(2);
     pan_include(wine);
     pan_include(tomatoes);
     pan_heat_level(4);
     
-    // spaghetti
+    // spaghetti (see below)
     cook_in_parallel(cook_spaghetti, spaghetti);
 
     // finish sauce
+    hourglass_wait_min(6);
     handblender_blend(pan_content());
     pan_include(SPOON_SUGAR);
     pan_include(SALT_AND_PEPPER);
@@ -64,7 +66,7 @@ void peel_tomatoes(Tomatoes tomatoes) {
     knife_cut_in(tomatoes);
     pot_sleep_until_boil();
     pot_include(tomatoes)
-    hourglass_sleep_min(1.5)
+    hourglass_wait_min(1.5)
     pot_pour_out();
     cool_under_water(tomatoes);
     pull_off_skin(tomatoes);
@@ -76,12 +78,12 @@ void bake_chicken_breast(ChickenBreast chicken) {
     pan_heat_level(8);
     pan_include(3*SPOON_OLIVE_OIL);
     pan_include(chicken);
-    hourglass_sleep_min(2);
+    hourglass_wait_min(2);
     pan_turn_content();
     pan_include(SALT_AND_PEPPER);
-    hourglass_sleep_min(2);
+    hourglass_wait_min(2);
     oven_include(chicken);
-    hourglass_sleep_min(20);
+    hourglass_wait_min(20);
     oven_take_out(chicken);
 }
 
