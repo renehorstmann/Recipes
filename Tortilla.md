@@ -28,6 +28,7 @@ int main() {
     bowl_knead_min(5);
     Dough dough = bowl_content();
     fridge_include(dough);
+    hourglass_wait_min(15);
 
     // fry tortillas
     roll_out(dough);
