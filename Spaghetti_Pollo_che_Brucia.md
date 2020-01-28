@@ -6,11 +6,11 @@
 Run the following code to cook one meal:
 
 ```c
-
-#include <oven.h>
-#include <pot.h>
-#include <pan.h>
 #include <kitchen.h>
+
+void peel_tomatoes(Tomatoes tomatoes);
+void bake_chicken_breast(ChickenBreast chicken);
+void cook_spaghetti(Spaghetti spaghetti);
 
 int main() {
 
@@ -23,34 +23,18 @@ int main() {
     Basil basil = 10
     RedWine_ml wine = 100;
 
-    oven_convection_degree_C(160);
-
+    
     // prepare tomatoes
-    pot_fill_water_L(1);
-    pot_heat_level(9);
-    knife_cut_in(tomatoes);
-    pot_include(tomatoes)
-    hourglass_sleep_min(1.5)
-    pot_tip_out();
-    cool_under_water(tomatoes);
-    pull_off_skin(tomatoes);
-    knife_cut_into_pieces(tomatoes);
+    peel_tomatpes(tomatoes);
 
     // cook chicken breast
-    wash_under_water(chicken);
-    pan_heat_level(8);
-    pan_include(3*SPOON_OLIVE_OIL);
-    pan_include(chicken);
-    hourglass_sleep_min(2);
-    pan_turn_content();
-    pan_include(SALT_AND_PEPPER);
-    hourglass_sleep_min(2);
-    oven_include(chicken);
-    hourglass_timer_min(20);
+    cook_in_parallel(bake_chicken_breast, chicken);
 
     // make sauce
     knife_cut_slices(garlic);
     knife_cut_slices(chili);
+    knife_cut_into_pieces(tomatoes);
+    // same pan as from the chicken
     pan_heat_level(7);
     pan_include(garlic);
     pan_include(chili);
@@ -60,16 +44,54 @@ int main() {
     pan_heat_level(4);
     
     // spaghetti
-    Spaghetti_cook(spaghetti);
+    cook_in_parallel(cook_spaghetti, spaghetti);
 
     // finish sauce
-    mixer_blend(pan_content());
+    handblender_blend(pan_content());
     pan_include(SPOON_SUGAR);
     pan_include(SALT_AND_PEPPER);
     knife_cut_into_pieces(basil);
     pan_include(basil);
-    pan_include(Spaghetti_salt_water());
+    pan_include(pot_take_off(SALT_WATER));
 
     serve();
 }
+
+void peel_tomatoes(Tomatoes tomatoes) {
+    pot_fill_water_L(1);
+    pot_heat_level(9);
+    knife_cut_in(tomatoes);
+    pot_sleep_until_boil();
+    pot_include(tomatoes)
+    hourglass_sleep_min(1.5)
+    pot_pour_out();
+    cool_under_water(tomatoes);
+    pull_off_skin(tomatoes);
+}
+
+void bake_chicken_breast(ChickenBreast chicken) {
+    oven_heat_C(160);
+    wash_under_water(chicken);
+    pan_heat_level(8);
+    pan_include(3*SPOON_OLIVE_OIL);
+    pan_include(chicken);
+    hourglass_sleep_min(2);
+    pan_turn_content();
+    pan_include(SALT_AND_PEPPER);
+    hourglass_sleep_min(2);
+    oven_include(chicken);
+    hourglass_sleep_min(20);
+    oven_take_out(chicken);
+}
+
+void cook_spaghetti(Spaghetti spaghetti) {
+    pot_fill_water_L(2);
+    pot_heat_level(9);
+    pot_sleep_until_boil();
+    pot_include(SALT);
+    pot_include(spaghetti);
+    hourglass_sleep_min(SPAGHETTI_COOK_TIME);
+    pot_pour_out();
+}
+
 ```
