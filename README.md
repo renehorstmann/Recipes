@@ -5,3 +5,7 @@ Some of my favorite recipes
 - [Spaghetti Pollo che Brucia](Spaghetti_Pollo_che_Brucia.md)
 - [Gnocchi](Gnocchi.md)
 
+## Mexican
+- [Tortilla](Tortilla.md)
+
+
