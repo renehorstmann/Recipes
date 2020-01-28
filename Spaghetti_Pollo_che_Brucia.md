@@ -27,7 +27,7 @@ int main() {
 
     
     // prepare tomatoes
-    peel_tomatpes(tomatoes);
+    peel_tomatoes(tomatoes);
 
     // cook chicken breast
     cook_in_parallel(bake_chicken_breast, chicken);
