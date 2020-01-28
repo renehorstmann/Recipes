@@ -64,7 +64,7 @@ void peel_tomatoes(Tomatoes tomatoes) {
     pot_fill_water_L(1);
     pot_heat_level(9);
     knife_cut_in(tomatoes);
-    pot_sleep_until_boil();
+    pot_wait_until_boil();
     pot_include(tomatoes)
     hourglass_wait_min(1.5)
     pot_pour_out();
@@ -90,10 +90,10 @@ void bake_chicken_breast(ChickenBreast chicken) {
 void cook_spaghetti(Spaghetti spaghetti) {
     pot_fill_water_L(2);
     pot_heat_level(9);
-    pot_sleep_until_boil();
+    pot_wait_until_boil();
     pot_include(SALT);
     pot_include(spaghetti);
-    hourglass_sleep_min(SPAGHETTI_COOK_TIME);
+    hourglass_wait_min(SPAGHETTI_COOK_TIME);
     pot_pour_out();
 }
 
