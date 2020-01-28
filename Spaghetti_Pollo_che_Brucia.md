@@ -36,8 +36,7 @@ int main() {
     knife_cut_slices(garlic);
     knife_cut_slices(chili);
     knife_cut_into_pieces(tomatoes);
-    // same pan as from the chicken
-    pan_heat_level(7);
+    pan_heat_level(7);  // same pan as from the chicken
     pan_include(garlic);
     pan_include(chili);
     hourglass_sleep_min(2);
