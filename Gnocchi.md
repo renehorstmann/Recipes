@@ -9,7 +9,7 @@ Run the following code to cook one meal:
 ```c
 #include <kitchen.h>
 
-// recipes below main
+// recipe below main
 void cook_potatoes(Potatoes potatoes);
 
 int main() {
@@ -26,6 +26,7 @@ int main() {
     // make gnocci dough
     bowl_include(potatoes);
     bowl_include(flour);
+    bowl_include(egg);
     bowl_include(SALT);
     masher_mash(bowl_content());
     Dough dough = bowl_content());
@@ -33,7 +34,7 @@ int main() {
     // divide into gnocchis
     roll_out(dough);
     knife_cut_into_pieces(dough);
-    fork_press(dough)
+    fork_press(dough);
     
     // cook gnocchis
     pan_heat_level(8);
@@ -47,6 +48,7 @@ int main() {
 void cook_potatoes(Potatoes potatoes) {
     pot_fill_water_L(2);
     pot_heat_level(9);
+    knife_peel(potatoes);
     pot_wait_until_boil();
     pot_include(potatoes);
     hourglass_sleep_min(15);
