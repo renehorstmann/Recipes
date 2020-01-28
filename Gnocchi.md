@@ -36,11 +36,14 @@ int main() {
     knife_cut_into_pieces(dough);
     fork_press(dough);
     
-    // cook gnocchis
+    // fry gnocchis
     pan_heat_level(8);
     pan_include(2 * SPOON_OLIVE_OIL);
     pan_include(dough);
-    hourglass_wait_min(8);
+    for(int i=0; i<8; i++) {
+        pan_turn_content();
+        hourglass_wait_min(1);
+    }
 
     serve();
 }
