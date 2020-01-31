@@ -22,7 +22,7 @@ int main() {
     Tomatoes      tomatoes  = 2;
     ChickenBreast chicken   = 1;
     Garlic        garlic    = 1;
-    RedChili      chili     = (spicy ? 2 : 1) * CM;
+    RedChili      chili     = (spicy ? 1.5 : 0.5) * CM;
     Basil         basil     = 10
     RedWine       wine      = 100 * ML;
 
