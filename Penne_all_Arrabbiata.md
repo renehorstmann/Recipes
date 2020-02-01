@@ -30,6 +30,7 @@ int main() {
     knife_cut_slices(chili);
     knife_cut_into_pieces(tomatoes);
     pan_heat_level(8);
+    pan_include(SPOON_OLIVE_OIL);
     pan_include(garlic);
     pan_include(chili);
     hourglass_wait_min(2);
