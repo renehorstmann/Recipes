@@ -21,7 +21,7 @@ int main() {
 
 
     // cook spaghetti (see below)
-    Task spaghetti_task = cook_in_parallel(bake_spaghetti, spaghetti);
+    Task spaghetti_task = cook_in_parallel(cook_spaghetti, spaghetti);
 
     knife_cut_into_pieces(bacon); 
     pan_heat_level(8);
