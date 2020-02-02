@@ -14,8 +14,8 @@ static const bool got_tortilla_press = true;
 int main() {
 
     // ingredients
-    Flour     flour     = 100 * G;
-    Cornflour cornflour = 100 * G;
+    Flour     flour     = 50 * G;
+    Cornflour cornflour = 50 * G;
     OliveOil  oil       = 35 * ML;
 
 
