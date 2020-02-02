@@ -39,8 +39,8 @@ int main() {
     // wait for spaghettis
     Task_join(spaghetti_task);
 
-    pan_include(spaghetti)
-    pan_include(bowl_content);
+    pan_include(spaghetti);
+    pan_include(bowl_content());
     pan_include(pot_take_off(SALT_WATER));
     hourglass_wait_min(2);
 
