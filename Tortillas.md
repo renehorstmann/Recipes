@@ -16,14 +16,14 @@ int main() {
     // ingredients
     Flour     flour     = 50 * G;
     Cornflour cornflour = 50 * G;
-    OliveOil  oil       = 35 * ML;
+    OliveOil  oil       = 15 * ML;
 
 
     // make tortilla dough
     bowl_include(flour);
     bowl_include(cornflour);
     bowl_include(oil);
-    bowl_include(100 * WARM_WATER_ML);
+    bowl_include(50 * WARM_WATER_ML);
     bowl_include(SALT);
     bowl_knead_min(5);
     Dough dough = bowl_content();
