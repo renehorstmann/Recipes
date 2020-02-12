@@ -15,8 +15,8 @@ void cook_potatoes(Potatoes potatoes);
 int main() {
 
     // ingredients
-    Potatoes potatoes = 100 * G;
-    Flour    flour    = 100 * G;
+    Potatoes potatoes = 150 * G;
+    Flour    flour    = 50 * G;
     Egg      egg      = 1;
 
    
@@ -49,7 +49,7 @@ int main() {
 }
 
 void cook_potatoes(Potatoes potatoes) {
-    pot_fill_water_L(2);
+    pot_fill_water_L(1);
     pot_heat_level(9);
     knife_peel(potatoes);
     pot_wait_until_boil();
