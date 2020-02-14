@@ -37,12 +37,12 @@ int main() {
     fork_press(dough);
     
     // fry gnocchis
-    pan_heat_level(8);
+    pan_heat_level(7);
     pan_include(2 * SPOON_OLIVE_OIL);
     pan_include(dough);
-    for(int i=0; i<8; i++) {
+    for(int i=0; i<2; i++) {
         pan_turn_content();
-        hourglass_wait_min(1);
+        hourglass_wait_min(3);
     }
 
     serve();
