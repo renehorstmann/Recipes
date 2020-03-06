@@ -14,16 +14,16 @@ static const bool got_tortilla_press = true;
 int main() {
 
     // ingredients
-    Flour     flour     = 50 * G;
-    Cornflour cornflour = 50 * G;
-    OliveOil  oil       = 15 * ML;
+    Flour     flour     = G(50);
+    Cornflour cornflour = G(50);
+    OliveOil  oil       = ML(15);
 
 
     // make tortilla dough
     bowl_include(flour);
     bowl_include(cornflour);
     bowl_include(oil);
-    bowl_include(50 * WARM_WATER_ML);
+    bowl_include(WARM_WATER_ML(50));
     bowl_include(SALT);
     bowl_knead_min(5);
     Dough dough = bowl_content();
