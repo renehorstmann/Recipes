@@ -16,10 +16,10 @@ static const bool spicy = true;
 int main() {
 
     // ingredients
-    Penne          penne    = 125 * G;
-    CannedTomatoes tomatoes = 200 * G;
+    Penne          penne    = G(125);
+    CannedTomatoes tomatoes = G(200);
     Garlic         garlic   = 1;
-    RedChili       chili    = (spicy ? 1.5 : 0.5) * CM;
+    RedChili       chili    = CM(spicy ? 1.5 : 0.5);
     Parsley        parsley  = 10
     
 
