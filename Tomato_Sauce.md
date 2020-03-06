@@ -14,15 +14,38 @@ void peel_tomatoes(Tomatoes tomatoes);
 int main() {
 
     // ingredients
-    Tomatoes tpmatoes       = 4;
-    Garlic   garlic         = 1;
-    Onion    onion          = 1;
-    Basil    basil          = 6;
-    RedWine  wine           = ML(100);
-    BalsamicVinegar vinegar = ML(25);
+    Tomatoes        tomatoes = 4;
+    Garlic          garlic   = 1;
+    Onion           onion    = 1;
+    Basil           basil    = 6;
+    RedWine         wine     = ML(100);
+    BalsamicVinegar vinegar  = ML(25);
 
-    // todo
-   
+    
+    peel_tomatoes(tomatoes);
+    knife_cut_into_pieces(tomatoes);
+    knife_cut_into_slices(garlic);
+    knife_cut_into_slices(onion);
+
+    pot_heat_level(9);
+    pot_include(3 * SPOON_OLIVE_OIL);
+    pot_include(garlic);
+    pot_include(onion);
+    hourglass_wait_min(2);
+
+    pot_include(wine);
+    pot_include(tomatoes);
+    hourglass_wait_min(3);
+
+    pot_include(TEA_SPOON_SUGAR);
+    pot_include(SPOON_SALT);
+    pot_include(vinegar);
+    pot_heat_level(5);
+    hourglass_wait_min(20);
+
+    hand_mixer_blend(pot_content());
+    pot_include(basil);
+    hourglass_wait_min(5);
     
     serve();
 }
