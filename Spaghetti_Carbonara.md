@@ -14,9 +14,9 @@ void cook_spaghetti(Spaghetti spaghetti);
 int main() {
 
     // ingredients
-    Spaghetti  speghetti = 125 * G;
-    DriedBacon bacon     = 100 * G;
-    Parmesan   cheese    = 50 * G;
+    Spaghetti  speghetti = G(125);
+    DriedBacon bacon     = G(100);
+    Parmesan   cheese    = G(50);
     Egg        egg       = 2;
 
 
