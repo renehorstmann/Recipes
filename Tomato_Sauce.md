@@ -43,6 +43,7 @@ int main() {
     pot_heat_level(5);
     hourglass_wait_min(20);
 
+    knife_cut_into_pieces(basil);
     hand_mixer_blend(pot_content());
     pot_include(basil);
     hourglass_wait_min(5);
