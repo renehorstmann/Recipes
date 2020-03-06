@@ -6,6 +6,7 @@ Some of my favorite recipes
 - [Spaghetti Pollo che Brucia](Spaghetti_Pollo_che_Brucia.md)
 - [Penne all Arrabbiata](Penne_all_Arrabbiata.md)
 - [Gnocchi](Gnocchi.md)
+- [Tomato Sauce](Tomato_Sauce.md)
 
 ## Mexican
 - [Tortillas](Tortillas.md)
