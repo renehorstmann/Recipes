@@ -21,7 +21,7 @@ int main() {
     RedWine         wine     = ML(100);
     BalsamicVinegar vinegar  = ML(25);
 
-    
+    // prepare tomatoes (see below)
     peel_tomatoes(tomatoes);
 
     knife_cut_into_pieces(tomatoes);
