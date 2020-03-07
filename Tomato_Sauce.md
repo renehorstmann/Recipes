@@ -28,12 +28,14 @@ int main() {
     knife_cut_into_slices(garlic);
     knife_cut_into_slices(onion);
 
+    // roast garlic and onion
     pot_heat_level(9);
     pot_include(3 * SPOON_OLIVE_OIL);
     pot_include(garlic);
     pot_include(onion);
     hourglass_wait_min(2);
 
+    // deglaze with wine
     pot_include(wine);
     pot_include(tomatoes);
     hourglass_wait_min(3);
@@ -42,8 +44,11 @@ int main() {
     pot_include(2 * TEA_SPOON_SALT);
     pot_include(vinegar);
     pot_heat_level(5);
+
+    // reduce the sauce
     hourglass_wait_min(20);
 
+    // finish tge sauce
     knife_cut_into_pieces(basil);
     hand_mixer_blend(pot_content());
     pot_include(basil);
