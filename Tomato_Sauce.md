@@ -23,6 +23,7 @@ int main() {
 
     
     peel_tomatoes(tomatoes);
+
     knife_cut_into_pieces(tomatoes);
     knife_cut_into_slices(garlic);
     knife_cut_into_slices(onion);
