@@ -7,6 +7,7 @@ Some of my favorite recipes
 - [Penne all Arrabbiata](Penne_all_Arrabbiata.md)
 - [Gnocchi](Gnocchi.md)
 - [Tomato Sauce](Tomato_Sauce.md)
+- [Julius Salad](Julius_Salad.md)
 
 ## Mexican
 - [Tortillas](Tortillas.md)
