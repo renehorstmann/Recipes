@@ -38,7 +38,7 @@ int main() {
     knife_cut_into_pieces(mushrooms);
     knife_cut_into_slices(onions);
 
-    pan_heat_level(7);
+    pan_heat_level(7); // same as for the chicken
     pan_include(paprika);
     pan_include(mushrooms);
     pan_include(onions);
