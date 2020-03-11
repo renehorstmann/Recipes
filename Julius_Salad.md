@@ -18,7 +18,10 @@ CaesarSauce make_CaesarSauce();
 int main() {
 
     // ingredients
-    ChickenBreast chicken   = 1;
+    ChickenBreast  chicken  = 1;
+    CherryTomatoes tomatoes = 6;
+    Onion          onion    = 1;
+    Feta           feta     = G(25);
 
     // warning: CaeserSauce has its own ingredients
 
