@@ -23,6 +23,7 @@ int main() {
     Paprika       paprika   = 1;
     Mushroom      mushrooms = 3;
     Onion         onion     = 1;
+    Radish        radish    = 4;
     Feta          feta      = G(25);
     RedWine       wine      = ML(50);
     // warning: CaeserSauce has its own ingredients
@@ -47,13 +48,17 @@ int main() {
     
     knife_cut_in_half(tomatoes);
     pan_include(wine);
+    pan_include(SALT_AND_PEPPER);
     pan_heat_level(5);
     hourglass_wait_min(10);
+
+    knife_cut_into_slices(radish);
 
     plate_include(salad);
     plate_include(pan_content());
     plate_include(chicken);
     plate_include(sauce);
+    plate_include(radish);
     plate_include(feta);
 
     serve(plate);
