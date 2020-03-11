@@ -14,7 +14,6 @@ void bake_chicken_breast(ChickenBreast chicken);
 
 CaesarSauce make_CaesarSauce();
 
-
 int main() {
 
     // ingredients
