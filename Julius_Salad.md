@@ -18,11 +18,14 @@ CaesarSauce make_CaesarSauce();
 int main() {
 
     // ingredients
-    ChickenBreast  chicken  = 1;
-    CherryTomatoes tomatoes = 6;
-    Onion          onion    = 1;
-    Feta           feta     = G(25);
-
+    ChickenBreast chicken   = 1;
+    Salad         salad     = G(50);
+    CherryTomato  tomatoes  = 6;
+    Paprika       paprika   = 1;
+    Mushroom      mushrooms = 3;
+    Onion         onion     = 1;
+    Feta          feta      = G(25);
+    RedWine       wine      = ML(50);
     // warning: CaeserSauce has its own ingredients
 
     // cook chicken breast (see below)
@@ -31,9 +34,30 @@ int main() {
     // see below (own ingredients)
     CaeserSauce sauce = make_CaeserSauce();
 
-    // todo...
+    knife_cut_into_pieces(paprika);
+    knife_cut_into_pieces(mushrooms);
+    knife_cut_into_slices(onions);
 
-    serve();
+    pan_heat_level(7);
+    pan_include(paprika);
+    pan_include(mushrooms);
+    pan_include(onions);
+    hourglass_wait_min(3);
+
+    pan_include(wine);
+    
+    knife_cut_in_half(tomatoes);
+    pan_include(wine);
+    pan_heat_level(5);
+    hourglass_wait_min(10);
+
+    plate_include(salad);
+    plate_include(pan_content());
+    plate_include(chicken);
+    plate_include(sauce);
+    plate_include(feta);
+
+    serve(plate);
 }
 
 void bake_chicken_breast(ChickenBreast chicken) {
