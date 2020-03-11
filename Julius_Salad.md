@@ -44,11 +44,11 @@ int main() {
     pan_include(onions);
     hourglass_wait_min(3);
 
-    pan_include(wine);
-    
     knife_cut_in_half(tomatoes);
+
     pan_include(wine);
     pan_include(SALT_AND_PEPPER);
+    pan_include(tomatoes);
     pan_heat_level(5);
     hourglass_wait_min(10);
 
