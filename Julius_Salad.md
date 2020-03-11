@@ -18,7 +18,7 @@ int main() {
 
     // ingredients
     ChickenBreast chicken   = 1;
-    Salad         salad     = G(50); // Romaine + iceberg lettuce 
+    Salad         salad     = G(50); // romaine + iceberg lettuce 
     CherryTomato  tomatoes  = 6;
     Paprika       paprika   = 1;
     Mushroom      mushrooms = 3;
