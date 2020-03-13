@@ -41,7 +41,7 @@ int main() {
     hourglass_wait_min(3);
 
     pot_include(TEA_SPOON_SUGAR);
-    pot_include(2 * TEA_SPOON_SALT);
+    pot_include(TEA_SPOON_SALT);
     pot_include(vinegar);
     pot_heat_level(5);
 
@@ -52,6 +52,7 @@ int main() {
     knife_cut_into_pieces(basil);
     hand_mixer_blend(pot_content());
     pot_include(basil);
+    pot_include(OREGANO);
     hourglass_wait_min(5);
     
     serve();
