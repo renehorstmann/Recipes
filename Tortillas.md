@@ -4,7 +4,7 @@
 ![result](build/Tortillas.jpg "Build")
 
 ## Source code
-Run the following code to cock four Tortillas:
+Run the following code to cook four Tortillas:
 
 ```c
 #include <kitchen.h>
