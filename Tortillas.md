@@ -35,6 +35,9 @@ int main() {
     knife_cut_into_n_pieces(dough, 4);
     roll_out(dough);
     pan_heat_level(8);
+
+    Tortilla tortillas[4];
+
     for(int i=0; i<4; i++) {
         if(got_tortilla_press) {
             tortilla_press(dough);
@@ -45,7 +48,7 @@ int main() {
         hourglass_wait_sec(45);
         pan_turn_content();
         hourglass_wait_sec(45);
-        Tortilla tortilla = pan_content();
+        tortillas[i] = pan_content();
     }
 
     serve();
