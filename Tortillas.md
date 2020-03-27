@@ -16,7 +16,7 @@ int main() {
     // ingredients
     Flour     flour     = G(50);
     Cornflour cornflour = G(50);
-    OliveOil  oil       = ML(15);
+    OliveOil  oil       = ML(8);
 
 
     // make tortilla dough
