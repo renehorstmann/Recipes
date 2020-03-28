@@ -14,9 +14,9 @@ void cook_spaghetti(Spaghetti spaghetti);
 int main() {
 
     // ingredients
-    Spaghetti  speghetti = G(125);
-    DriedBacon bacon     = G(100);
-    Parmesan   cheese    = G(50);
+    Spaghetti  speghetti = G(100);
+    DriedBacon bacon     = G(60); // pancetta or guanciale
+    Parmesan   cheese    = G(30);
     Egg        egg       = 2;
 
 
@@ -24,8 +24,7 @@ int main() {
     Task spaghetti_task = cook_in_parallel(cook_spaghetti, spaghetti);
 
     knife_cut_into_pieces(bacon); 
-    pan_heat_level(8);
-    pan_include(SPOON_OLIVE_OIL);
+    pan_heat_level(7);
     pan_include(bacon);
     
     slice(cheese);
