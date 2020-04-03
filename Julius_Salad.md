@@ -46,6 +46,7 @@ int main() {
 
     knife_cut_in_half(tomatoes);
 
+    // deglaze with wine
     pan_include(wine);
     pan_include(SALT_AND_PEPPER);
     pan_include(tomatoes);
