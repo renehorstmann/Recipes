@@ -66,7 +66,7 @@ void peel_tomatoes(Tomatoes tomatoes) {
     knife_cut_in(tomatoes);
     pot_wait_until_boil();
     pot_include(tomatoes)
-    hourglass_wait_min(1.5)
+    hourglass_wait_min(1)
     pot_pour_out();
     cool_under_water(tomatoes);
     pull_off_skin(tomatoes);
