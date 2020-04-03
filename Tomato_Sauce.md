@@ -40,7 +40,7 @@ int main() {
     pot_include(tomatoes);
     hourglass_wait_min(3);
 
-    pot_include(TEA_SPOON_SUGAR);
+    pot_include(PINCH_OF_SUGAR);
     pot_include(TEA_SPOON_SALT);
     pot_include(vinegar);
     pot_heat_level(5);
