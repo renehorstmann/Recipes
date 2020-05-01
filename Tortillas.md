@@ -23,7 +23,7 @@ int main() {
     bowl_include(flour);
     bowl_include(cornflour);
     bowl_include(oil);
-    bowl_include(WARM_WATER_ML(50));
+    bowl_include(WarnWater_ml(50));
     bowl_include(SALT);
     bowl_knead_min(5);
     Portion *dough = bowl_content();
