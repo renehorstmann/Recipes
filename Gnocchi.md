@@ -15,9 +15,9 @@ void cook_potatoes(Potatoes potatoes);
 int main() {
 
     // ingredients
-    Potatoes potatoes = G(150);
-    Flour    flour    = G(50);
-    Egg      egg      = 1;
+    Portion *potatoes = Potatoes_g(150);
+    Portion *flour    = Flour_g(50);
+    Portion *egg      = Egg(1);
 
    
     // cook potatoes (see below)
@@ -29,7 +29,7 @@ int main() {
     bowl_include(egg);
     bowl_include(SALT);
     masher_mash(bowl_content());
-    Dough dough = bowl_content());
+    Portion *dough = bowl_content());
 
     // divide into gnocchis
     roll_out(dough);
