@@ -9,18 +9,18 @@ Run the following code to cook one meal:
 #include <kitchen.h>
 
 // recipe below main
-void cook_penne(Penne penne);
+void cook_penne(Portion *penne);
 
 static const bool spicy = true;
 
 int main() {
 
     // ingredients
-    Penne          penne    = G(125);
-    CannedTomatoes tomatoes = G(200);
-    Garlic         garlic   = 1;
-    RedChili       chili    = CM(spicy ? 1.5 : 0.5);
-    Parsley        parsley  = 10
+    Portion *penne    = Penne_g(125);
+    Portion *tomatoes = CannedTomatoes_g(200);
+    Portion *garlic   = Garlic(1);
+    Portion *chili    = RedChili_cm(spicy ? 1.5 : 0.5);
+    Portion *parsley  = Parsley(10)
     
 
     // penne (see below)
@@ -52,7 +52,7 @@ int main() {
     serve();
 }
 
-void cook_penne(Penne penne) {
+void cook_penne(Portion *penne) {
     pot_fill_water_L(2);
     pot_heat_level(9);
     pot_wait_until_boil();
