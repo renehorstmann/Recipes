@@ -9,17 +9,17 @@ Run the following code to cook a sauce:
 #include <kitchen.h>
 
 // recipe below main
-void peel_tomatoes(Tomatoes tomatoes);
+void peel_tomatoes(Portion *tomatoes);
 
 int main() {
 
     // ingredients
-    Tomatoes        tomatoes = 4;
-    Garlic          garlic   = 1;
-    Onion           onion    = 1;
-    Basil           basil    = 6;
-    RedWine         wine     = ML(100);
-    BalsamicVinegar vinegar  = ML(25);
+    Portion *tomatoes = Tomatoes(4);
+    Portion *garlic   = Garlic(1);
+    Portion *onion    = Onion(1);
+    Portion *basil    = Basil(6);
+    Portion *wine     = RedWine_ml(100);
+    Portion *vinegar  = BalsamicVinegar_ml(25);
 
     // prepare tomatoes (see below)
     peel_tomatoes(tomatoes);
@@ -58,7 +58,7 @@ int main() {
     serve();
 }
 
-void peel_tomatoes(Tomatoes tomatoes) {
+void peel_tomatoes(Portion *tomatoes) {
     pot_fill_water_L(1);
     pot_heat_level(9);
     knife_cut_in(tomatoes);
