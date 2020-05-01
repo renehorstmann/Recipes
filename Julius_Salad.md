@@ -10,29 +10,29 @@ Run the following code to cook one meal:
 #include <kitchen.h>
 
 // recipes below main
-void bake_chicken_breast(ChickenBreast chicken);
+void bake_chicken_breast(Portion *chicken);
 
-CaesarSauce make_CaesarSauce();
+Portion *make_CaesarSauce();
 
 int main() {
 
     // ingredients
-    ChickenBreast chicken   = 1;
-    Salad         salad     = G(50); // romaine + iceberg lettuce 
-    CherryTomato  tomatoes  = 6;
-    Paprika       paprika   = 1;
-    Mushroom      mushrooms = 3;
-    Onion         onion     = 1;
-    Radish        radish    = 4;
-    Feta          feta      = G(25);
-    RedWine       wine      = ML(50);
+    Portion *chicken   = ChickenBreast(1);
+    Portion *salad     = Salad_g(50); // romaine + iceberg lettuce 
+    Portion *tomatoes  = CherryTomato(6);
+    Portion *paprika   = Paprika(1);
+    Portion *mushrooms = Mushroom(3);
+    Portion *onion     = Onion(1);
+    Portion *radish    = Radish(4);
+    Portion *feta      = Feta_g(25);
+    Portion *wine      = RedWine_ml(50);
     // warning: CaeserSauce has its own ingredients
 
     // cook chicken breast (see below)
     cook_in_parallel(bake_chicken_breast, chicken);
 
     // see below (own ingredients)
-    CaeserSauce sauce = make_CaeserSauce();
+    Portion *sauce = make_CaeserSauce();
 
     knife_cut_into_pieces(paprika);
     knife_cut_into_pieces(mushrooms);
@@ -65,7 +65,7 @@ int main() {
     serve(plate);
 }
 
-void bake_chicken_breast(ChickenBreast chicken) {
+void bake_chicken_breast(Portion *chicken) {
     oven_heat_C(160);
     wash_under_water(chicken);
     pan_heat_level(8);
@@ -82,10 +82,10 @@ void bake_chicken_breast(ChickenBreast chicken) {
 
 CaesarSauce make_CaesarSauce() {
     // sauce ingredients
-    Parmesan        cheese = G(50);
-    Garlic          garlic = 1;
-    SaladMayonnaise mayo   = G(250);
-    CremeFraiche    creme  = G(150);
+    Portion *cheese = Parmesan_g(50);
+    Portion *garlic = Garlic(1);
+    Portion *mayo   = SaladMayonnaise_g(250);
+    Portion *creme  = CremeFraiche_g(150);
 
     grater_rasp(cheese);
     knife_cut_into_slices(garlic);
