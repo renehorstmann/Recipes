@@ -9,15 +9,15 @@ Run the following code to cook one meal:
 #include <kitchen.h>
 
 // recipe below main
-void cook_spaghetti(Spaghetti spaghetti);
+void cook_spaghetti(Portion *spaghetti);
 
 int main() {
 
     // ingredients
-    Spaghetti  speghetti = G(100);
-    DriedBacon bacon     = G(60); // pancetta or guanciale
-    Parmesan   cheese    = G(30);
-    Egg        egg       = 2;
+    Portion *speghetti = Spaghetti_g(100);
+    Portion *bacon     = DriedBacon_g(60); // pancetta or guanciale
+    Portion *cheese    = Parmesan_g(30);
+    Portion *egg       = Egg(2);
 
 
     // cook spaghetti (see below)
@@ -46,7 +46,7 @@ int main() {
     serve();
 }
 
-void cook_spaghetti(Spaghetti spaghetti) {
+void cook_spaghetti(Portion *spaghetti) {
     pot_fill_water_L(2);
     pot_heat_level(9);
     pot_wait_until_boil();
