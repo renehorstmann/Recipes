@@ -9,22 +9,22 @@ Run the following code to cook one meal:
 #include <kitchen.h>
 
 // recipes below main
-void peel_tomatoes(Tomatoes tomatoes);
-void bake_chicken_breast(ChickenBreast chicken);
-void cook_spaghetti(Spaghetti spaghetti);
+void peel_tomatoes(Portion *tomatoes);
+void bake_chicken_breast(Portion *chicken);
+void cook_spaghetti(Portion *spaghetti);
 
 static const bool spicy = true;
 
 int main() {
 
     // ingredients
-    Spaghetti     speghetti = G(125);
-    Tomatoes      tomatoes  = 2;
-    ChickenBreast chicken   = 1;
-    Garlic        garlic    = 1;
-    RedChili      chili     = CM(spicy ? 1.5 : 0.5);
-    Basil         basil     = 10
-    RedWine       wine      = ML(100);
+    Portion *speghetti = Spaghetti_g(125);
+    Portion *tomatoes  = Tomatoes(2);
+    Portion *chicken   = ChickenBreast(1);
+    Portion *garlic    = Garlic(1);
+    Portion *chili     = RedChili_cm(spicy ? 1.5 : 0.5);
+    Portion *basil     = Basil(10)
+    Portion *wine      = RedWine_ml(100);
 
    
     // prepare tomatoes (see below)
@@ -60,7 +60,7 @@ int main() {
     serve();
 }
 
-void peel_tomatoes(Tomatoes tomatoes) {
+void peel_tomatoes(Portion *tomatoes) {
     pot_fill_water_L(1);
     pot_heat_level(9);
     knife_cut_in(tomatoes);
@@ -72,7 +72,7 @@ void peel_tomatoes(Tomatoes tomatoes) {
     pull_off_skin(tomatoes);
 }
 
-void bake_chicken_breast(ChickenBreast chicken) {
+void bake_chicken_breast(Portion *chicken) {
     oven_heat_C(160);
     wash_under_water(chicken);
     pan_heat_level(8);
@@ -87,7 +87,7 @@ void bake_chicken_breast(ChickenBreast chicken) {
     oven_take_out(chicken);
 }
 
-void cook_spaghetti(Spaghetti spaghetti) {
+void cook_spaghetti(Portion *spaghetti) {
     pot_fill_water_L(2);
     pot_heat_level(9);
     pot_wait_until_boil();
