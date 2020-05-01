@@ -14,9 +14,9 @@ static const bool got_tortilla_press = true;
 int main() {
 
     // ingredients
-    Flour     flour     = G(50);
-    Cornflour cornflour = G(50);
-    OliveOil  oil       = ML(8);
+    Portion *flour     = Flour_g(50);
+    Portion *cornflour = CornFlour_g(50);
+    Portion *oil       = OliveOil_ml(8);
 
 
     // make tortilla dough
@@ -26,7 +26,7 @@ int main() {
     bowl_include(WARM_WATER_ML(50));
     bowl_include(SALT);
     bowl_knead_min(5);
-    Dough dough = bowl_content();
+    Portion *dough = bowl_content();
     fridge_include(dough);
     hourglass_wait_min(15);
 
@@ -36,7 +36,7 @@ int main() {
     roll_out(dough);
     pan_heat_level(8);
 
-    Tortilla tortillas[4];
+    Portion *tortillas[4];
 
     for(int i=0; i<4; i++) {
         if(got_tortilla_press) {
@@ -51,7 +51,7 @@ int main() {
         tortillas[i] = pan_content();
     }
 
-    serve();
+    serve_portions(tortillas, 4);
 }
 
 ```
