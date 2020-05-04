@@ -54,8 +54,10 @@ int main() {
     pot_include(basil);
     pot_include(OREGANO);
     hourglass_wait_min(5);
+
+    Portion *sauce = pot_content();
     
-    serve();
+    serve_portion(sauce);
 }
 
 void peel_tomatoes(Portion *tomatoes) {
