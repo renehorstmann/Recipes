@@ -55,7 +55,7 @@ void cook_tomatoes(Portion *tomatoes) {
     pot_heat_level(9);
     pot_include(tomatoes);
     pot_wait_until_boil();
-    pot_heat_level(4);
+    pot_heat_level(5);
     hourglass_wait_min(15);
     pot_pour_out();
 
