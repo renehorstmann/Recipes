@@ -62,6 +62,7 @@ void cook_tomatoes(Portion *tomatoes) {
     // cool down the tomatoes
     hourglass_wait_min(10);
     pull_off_skin(tomatoes);
+    remove_stem(tomatoes);
 }
 
 ```
