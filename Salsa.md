@@ -37,8 +37,9 @@ int main() {
     bowl_include(pepperbell);
     bowl_include(chili);
     bowl_include(2 * SPOON_OLIVE_OIL);
-    bowl_include(SPOON_BALSAMICO_VINEGAR);
+    bowl_include(SPOON_BALSAMIC_VINEGAR);
     bowl_include(SALT_AND_PEPPER);
+    bowl_include(PINCH_OF_SUGAR);
     bowl_mash();
 
     Portion *salsa = bowl_content();
