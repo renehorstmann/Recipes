@@ -12,7 +12,7 @@ Run the following code to cook a sauce:
 void cook_tomatoes(Portion *tomatoes);
 
 
-static bool SPICY = true;
+static const bool spicy = true;
 
 int main() {
 
@@ -21,7 +21,7 @@ int main() {
     Portion *garlic     = Garlic(1);
     Portion *onion      = Onion(1);
     Portion *pepperbell = PepperBell_quater(1);
-    Portion *chili      = Chili_cm(SPICY? 8 : 4);
+    Portion *chili      = Chili_cm(spicy? 8 : 4);
     
     // prepare tomatoes (see below)
     cook_tomatoes(tomatoes);
@@ -40,9 +40,12 @@ int main() {
     bowl_include(SALT_AND_PEPPER);
     bowl_mash();
 
-    hourglass_wait_min(10);
+    Portion *salsa = bowl_content();
+
+    fridge_include(salsa);
+    hourglass_wait_min(15);
     
-    serve();
+    serve_portion(salsa);
 }
 
 void cook_tomatoes(Portion *tomatoes) {
