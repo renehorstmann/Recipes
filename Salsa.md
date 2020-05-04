@@ -21,7 +21,7 @@ int main() {
     Portion *garlic     = Garlic(1);
     Portion *onion      = Onion(1);
     Portion *pepperbell = PepperBell_quater(1);
-    Portion *chili      = Chili_cm(spicy? 8 : 4);
+    Portion *chili      = RedChili_cm(spicy? 8 : 4);
     
     // prepare tomatoes (see below)
     cook_tomatoes(tomatoes);
@@ -41,6 +41,11 @@ int main() {
     bowl_include(SALT_AND_PEPPER);
     bowl_include(PINCH_OF_SUGAR);
     bowl_mash();
+
+    do {
+        bowl_include(SPOON_TOMATO_PASTE);
+        bowl_stir();
+    } while( too_fluid(bowl_content()) );
 
     Portion *salsa = bowl_content();
 
