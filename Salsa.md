@@ -20,7 +20,7 @@ int main() {
     Portion *tomatoes   = Tomatoes(4);
     Portion *garlic     = Garlic(1);
     Portion *onion      = Onion(1);
-    Portion *pepperbell = PepperBell_quater(1);
+    Portion *bellpepper = BellPeppee_quater(1);
     Portion *chili      = RedChili_cm(spicy? 8 : 4);
     
     // prepare tomatoes (see below)
@@ -28,13 +28,13 @@ int main() {
 
     knife_cut_into_pieces(garlic);
     knife_cut_into_pieces(onion);
-    knife_cut_into_pieces(pepperbell);
+    knife_cut_into_pieces(bellpepper);
     knife_cut_into_pieces(chili);
 
     bowl_include(tomatoes);
     bowl_include(garlic);
     bowl_include(onion);
-    bowl_include(pepperbell);
+    bowl_include(bellpepper);
     bowl_include(chili);
     bowl_include(2 * SPOON_OLIVE_OIL);
     bowl_include(SPOON_BALSAMIC_VINEGAR);
