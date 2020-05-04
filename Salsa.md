@@ -60,7 +60,7 @@ void cook_tomatoes(Portion *tomatoes) {
     pot_pour_out();
 
     // cool down the tomatoes
-    hourglass_wait_min(10);
+    hourglass_wait_min(20);
     pull_off_skin(tomatoes);
     remove_stem(tomatoes);
 }
