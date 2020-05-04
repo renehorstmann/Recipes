@@ -46,6 +46,7 @@ int main() {
         bowl_include(SPOON_TOMATO_PASTE);
         bowl_stir();
     } while( too_fluid(bowl_content()) );
+    // approx. four spoons...
 
     Portion *salsa = bowl_content();
 
