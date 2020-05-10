@@ -29,7 +29,7 @@ int main() {
     
     slice(cheese);
     bowl_include(cheese);
-    EggYolk yolk = seperate(egg);
+    Portion *yolk = seperate(egg);
     bowl_include(yolk);
     bowl_include(PEPPER);
     bowl_include(pot_take_off(SALT_WATER));
