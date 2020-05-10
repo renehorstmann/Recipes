@@ -15,7 +15,7 @@ int main() {
 
     // ingredients
     Portion *speghetti = Spaghetti_g(100);
-    Portion *bacon     = DriedBacon_g(50); // pancetta or guanciale
+    Portion *bacon     = DriedBacon_g(60); // pancetta or guanciale
     Portion *cheese    = Parmesan_g(30);
     Portion *egg       = Egg(2);
 
