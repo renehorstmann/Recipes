@@ -53,7 +53,10 @@ int main() {
     hand_mixer_blend(pot_content());
     pot_include(basil);
     pot_include(OREGANO);
-    hourglass_wait_min(5);
+
+    do {
+        hourglass_wait_min(5);
+    } while( too_fluid(pot_content()) );
 
     Portion *sauce = pot_content();
     
