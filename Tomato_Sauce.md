@@ -55,8 +55,10 @@ int main() {
     pot_include(OREGANO);
 
     do {
+        pot_stir();
         hourglass_wait_min(5);
     } while( too_fluid(pot_content()) );
+    // approx. 4 runs...
 
     Portion *sauce = pot_content();
     
