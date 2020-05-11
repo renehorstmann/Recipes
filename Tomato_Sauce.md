@@ -33,7 +33,7 @@ int main() {
     pot_include(3 * SPOON_OLIVE_OIL);
     pot_include(garlic);
     pot_include(onion);
-    hourglass_wait_min(2);
+    hourglass_wait_min(1);
 
     // deglaze with wine
     pot_include(wine);
