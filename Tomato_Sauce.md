@@ -38,12 +38,12 @@ int main() {
     // deglaze with wine
     pot_include(wine);
     pot_include(tomatoes);
-    hourglass_wait_min(3);
+    hourglass_wait_min(2);
 
+    pot_heat_level(5);
+    pot_include(vinegar);
     pot_include(PINCH_OF_SUGAR);
     pot_include(TEA_SPOON_SALT);
-    pot_include(vinegar);
-    pot_heat_level(5);
 
     // reduce the sauce
     hourglass_wait_min(20);
