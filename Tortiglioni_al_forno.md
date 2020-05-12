@@ -5,10 +5,12 @@
 ## Source code
 Run the following code to cook two meals:
 
+(Needs a [tomato sauce](Tomato_sauce.md)
+
 ```c
 #include <kitchen.h>
 
-// see [Tomato_Sauce](Tomato_sauce.md)
+// see Tomato_sauce.md
 Portion *make_tomato_sauce();
 
 // recipe below main
@@ -25,7 +27,7 @@ int main() {
     Portion *basil       = Basil(8);
     // Warning: tomato sauce needs its own ingredients!
 
-    // see [Tomato_Sauce](Tomato_sauce.md)
+    // see Tomato_sauce.md
     Portion *sauce = make_tomato_sauce();
    
     // tortiglioni (see below)
