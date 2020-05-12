@@ -1,11 +1,11 @@
-# Tortiglioni_al_forno
+# Tortiglioni al forno
 
 ![result](build/Tortiglioni_al_forno.jpg "Build")
 
 ## Source code
 Run the following code to cook two meals:
 
-(Needs a [tomato sauce](Tomato_sauce.md)
+(Needs a [tomato sauce](Tomato_Sauce.md))
 
 ```c
 #include <kitchen.h>
