@@ -65,7 +65,7 @@ int main() {
     serve();
 }
 
-void cook_toetiglioni(Portion *tortiglioni) {
+void cook_tortiglioni(Portion *tortiglioni) {
     pot_fill_water_L(2);
     pot_heat_level(9);
     pot_wait_until_boil();
