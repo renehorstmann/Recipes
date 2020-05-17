@@ -71,7 +71,7 @@ void cook_tortiglioni(Portion *tortiglioni) {
     pot_wait_until_boil();
     pot_include(SALT);
     pot_include(tortiglioni);
-    hourglass_wait_min(TORTIGLIONI_COOK_TIME);
+    hourglass_wait_min( 0.8 * TORTIGLIONI_COOK_TIME );
     pot_pour_out();
 }
 
