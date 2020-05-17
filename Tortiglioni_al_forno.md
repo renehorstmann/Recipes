@@ -20,7 +20,7 @@ int main() {
 
     // ingredients
     Portion *tortiglioni = Tortiglioni_g(250);
-    Portion *mozerella   = Mozerella_g(100);
+    Portion *mozerella   = Mozerella_g(70);
     Portion *parmesan    = Parmesan_g(50);
     Portion *ham         = CookedHam_g(50);
     Portion *tomatoes    = CherryTomatoes(8);
