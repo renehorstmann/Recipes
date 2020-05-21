@@ -16,11 +16,11 @@ int main() {
 
     // ingredients
     Portion *speghetti = Spaghetti_g(100);
-    Portion *tomatoes  = CannedTomatoes_g(125);
+    Portion *tomatoes  = CannedTomatoes_g(100);
     Portion *chicken   = ChickenBreast(1);
     Portion *onion     = Onion(1);
     Portion *garlic    = Garlic(1);
-    Portion *parsley   = Parsley(10)
+    Portion *parsley   = Parsley(6);
     Portion *wine      = WhiteWine_ml(100);
     
     
