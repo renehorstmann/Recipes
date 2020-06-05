@@ -56,14 +56,5 @@ int main() {
     serve();
 }
 
-void cook_spaghetti(Portion *spaghetti) {
-    pot_fill_water_L(2);
-    pot_heat_level(9);
-    pot_wait_until_boil();
-    pot_include(SALT);
-    pot_include(spaghetti);
-    hourglass_wait_min(SPAGHETTI_COOK_TIME);
-    pot_pour_out();
-}
 
 ```
