@@ -80,7 +80,7 @@ void bake_chicken_breast(Portion *chicken) {
     oven_take_out(chicken);
 }
 
-CaesarSauce make_CaesarSauce() {
+Portion *make_CaesarSauce() {
     // sauce ingredients
     Portion *cheese = Parmesan_g(50);
     Portion *garlic = Garlic(1);
