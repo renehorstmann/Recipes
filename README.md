@@ -1,5 +1,7 @@
 # Recipes
-Some of my favorite recipes
+
+My old *gag* version of some of my favorite recipes, written in pseudo C.
+For my actual recipes see [Rezepte](https://github.com/renehorstmann/Rezepte) (written in German)
 
 ## Italien
 - [Spaghetti Carbonara](Spaghetti_Carbonara.md)
